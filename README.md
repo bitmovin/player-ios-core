@@ -39,7 +39,7 @@ https://github.com/bitmovin/player-ios-core.git
 To integrate using Apple's Swift Package Manager, add the following as a dependency to your `Package.swift` and replace `Version Number` with the desired version of the SDK.
 
 ```swift
-.package(name: "BitmovinPlayerCore", url: "https://github.com/bitmovin/player-ios-core.git", .exact("Version Number"))
+.package(url: "https://github.com/bitmovin/player-ios-core.git", exact: "Version Number")
 ```
 
 And then specify the `BitmovinPlayerCore` as a dependency of the desired target. Here is an example of a `Package.swift` file:
@@ -49,10 +49,15 @@ let package = Package(
   ...
   dependencies: [
     ...
-    .package(name: "BitmovinPlayerCore", url: "https://github.com/bitmovin/player-ios-core.git", .exact("Version Number"))
+    .package(url: "https://github.com/bitmovin/player-ios-core.git", exact: "Version Number")
   ],
   targets: [
-    .target(name: "<NAME_OF_YOUR_PACKAGE>", dependencies: ["BitmovinPlayerCore"])
+    .target(
+      name: "<NAME_OF_YOUR_PACKAGE>", 
+      dependencies: [
+        .product(name: "BitmovinPlayerCore", package: "player-ios-core")
+      ]
+    )
   ]
   ...
 )
