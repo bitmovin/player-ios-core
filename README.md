@@ -49,7 +49,7 @@ let package = Package(
   ...
   dependencies: [
     ...
-    .package(name: "BitmovinPlayerCore", url: "https://github.com/bitmovin/player-ios.git", .exact("Version Number"))
+    .package(name: "BitmovinPlayerCore", url: "https://github.com/bitmovin/player-ios-core.git", .exact("Version Number"))
   ],
   targets: [
     .target(name: "<NAME_OF_YOUR_PACKAGE>", dependencies: ["BitmovinPlayerCore"])
