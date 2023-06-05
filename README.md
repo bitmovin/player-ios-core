@@ -74,7 +74,7 @@ When using Xcode, go to the `General` page or your app target and add the SDK bu
 
 - Add your Bitmovin Player license key to the `Info.plist` file as `BitmovinPlayerLicenseKey`. Alternatively, you can also set the license key via the `PlayerConfig.key` property when creating a `Player` instance.
 
-    Your Bitmovin Player license key can be found under `Player -> Licenses` in the [Bitmovin Dashboard](https://bitmovin.com/dashboard).
+    Your Bitmovin Player license key can be found under `Player -> Licenses` in the [Bitmovin Dashboard](https://dashboard.bitmovin.com).
 
 - Add the Bundle Identifier of the iOS application which is using the SDK as an allowed domain to the Bitmovin licensing backend. This can be also done under `Player -> Licenses` via the [Bitmovin Dashboard](https://dashboard.bitmovin.com).
 
