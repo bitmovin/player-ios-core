@@ -15,13 +15,11 @@ The `BitmovinPlayerCore` package is the standalone `Player` without additional d
 To add the `BitmovinPlayerCore` SDK as a dependency to your project, you have three options: Using CocoaPods, Swift Package Manager or adding the SDK bundle directly.
 
 ### Using [CocoaPods](https://cocoapods.org/)
-Add the following lines to the `Podfile` of your project and replace the `Version Number` with the desired version of the `BitmovinPlayerCore`. You can find all versions [here](https://github.com/bitmovin/cocoapod-specs/tree/master/Specs/BitmovinPlayerCore).
+Add the following lines to the `Podfile` of your project and replace the `Version Number` with the desired version of `BitmovinPlayerCore`. All available versions from **3.77.0** on are listed in the [Cocoapods trunk repository](https://github.com/CocoaPods/Specs/tree/master/Specs/e/b/b/BitmovinPlayerCore) (earlier versions are listed in our [CocoaPods repository](https://github.com/bitmovin/cocoapod-specs/tree/master/Specs/BitmovinPlayerCore) instead).
 
-Execute `pod repo update` first to add the new source and execute `pod install` after to install the new `BitmovinPlayerCore` dependency.
+Execute `pod install` to install the new `BitmovinPlayerCore` dependency.
 
 ```ruby
-source 'https://github.com/bitmovin/cocoapod-specs.git'
-
 pod 'BitmovinPlayerCore', '3.77.1-a.2'
 ```
 
