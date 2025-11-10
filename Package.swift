@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BitmovinPlayerCore",
-            url: "https://cdn.bitmovin.com/player/ios_tvos/3.99.0/BitmovinPlayerCore.zip",
-            checksum: "78d4ec8776384ce68c7745b961f18a7d46e9bd2ce7abfac525f69cb5dcfa1bfb"
+            url: "https://cdn.bitmovin.com/player/ios_tvos/3.100.0-a.1/BitmovinPlayerCore.zip",
+            checksum: "393c21d7c14e1f26952d9cc9d03f1acd196b2e7446215bf4c8167463fd370555"
         )
     ]
 )
