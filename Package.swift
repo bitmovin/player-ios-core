@@ -8,7 +8,7 @@ let package = Package(
     platforms: [
         .iOS(.v14),
         .tvOS(.v14),
-        .visionOS(.v1)
+        .visionOS(.v1),
     ],
     products: [
         .library(
@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "BitmovinPlayerCore",
-            url: "https://cdn.bitmovin.com/player/ios_tvos/3.116.0/BitmovinPlayerCore.zip",
-            checksum: "2bc102c0387d0a61c77b8116a3015a55a1ba0fd3007f0f28a55110b38d39ff00"
-        )
+            url: "https://cdn.bitmovin.com/player/ios_tvos/3.116.1-rc.1/BitmovinPlayerCore.zip",
+            checksum: "b1a015c6d8938f123d3d2b60f4b6b064dc404ae38c97b213b1131e1509790093"
+        ),
     ]
 )
